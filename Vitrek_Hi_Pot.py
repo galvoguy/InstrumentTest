@@ -31,6 +31,7 @@ print(header_string) #should be something like "VITREK, V74, 00000000, v1.15"
 # Create the test sequence
 my_tester.write('NOSEQ') # Clear and set active sequence to #0
 my_tester.write('ADD', 'DCW', '1750.0', '5', '30.0',' ','0.005') #Add command to sequence, DC mode, 1750 Volts, 5 second ramp, 30 second dwell, no min leakage I, 5mA max leakage I, DUT is isolated because field 7 is blank. 
+# TODO Test the v74 with leads disconnected, and create a min leakage value slightly above to be a check on connectivity above in the empty field. 
 print (my_tester.query('*ERR?')) # Check if the command wqsa received.
 #Use the above 2 lines as a template for more commands in the #0 sequence.  
 

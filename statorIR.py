@@ -50,5 +50,5 @@ print(result)
 
 # TODO parse the result into JSON fields into the database. 
 
-# TODO: embed into GUI that prompts the user to change leads onto 3 combinations of phases and hit run again. 
+# TODO: embed into GUI that prompts the user to change leads onto 2 more combinations of phases and hit run again. 
 
